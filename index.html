@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3, #8e8cd8);
+            color: white;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 82%;
+            max-width: 850px;
+            max-height: 85vh;
+            padding: 55px;
+            text-align: center;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+            overflow-y: auto;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .enter {
+            margin-top: 35px;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            animation: blink 1.5s infinite;
+        }
+
+        .heart {
+            font-size: 45px;
+            margin: 20px;
+        }
+
+        .download-btn {
+            margin-top: 25px;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #d94f78;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card" id="card">
+
+    <h1>For the person who makes my days a little more special... ❤️</h1>
+
+    <p>
+        I made something for you.
+    </p>
+
+    <p>
+        Not because I had to,<br>
+        but because I wanted to. ❤️
+    </p>
+
+    <div class="enter">
+        ⌨️ Press ENTER to begin...
+    </div>
+
+</div>
+
+<script>
+
+let step = 0;
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+
+        step++;
+
+        if (step === 1) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>Before you continue... ❤️</h1>
+
+                <p>
+                    Just remember one thing...
+                </p>
+
+                <p>
+                    You are someone I never want<br>
+                    to become "just a memory."
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 2) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>And now... ❤️</h1>
+
+                <p>
+                    I think you already know<br>
+                    how special you are to me.
+                </p>
+
+                <p>
+                    But today,<br>
+                    I wanted to remind you.
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 3) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>Vasanth... ❤️</h1>
+
+                <p>
+                    This little surprise is specially made
+                    just for you.
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 4) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>Dear Vasanth ❤️</h1>
+
+                <p>
+                    Unakku normal-a "Happy Boyfriend's Day" nu
+                    oru message mattum anuppa enakku manasu varala.
+                </p>
+
+                <p>
+                    So, en kaiyala oru small surprise create panna
+                    try panniruken. 🥹
+                </p>
+
+                <p>
+                    Namma life-la ellame perfect-a irundhirukkanum
+                    nu illa... sometimes misunderstandings irukkum,
+                    arguments irukkum, konjam kovamum irukkum.
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 5) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>But still... ❤️</h1>
+
+                <p>
+                    Athukku mela namma share panra memories,
+                    laughter, care ellame romba special.
+                </p>
+
+                <p>
+                    Enakku un kitta romba pidicha oru vishayam
+                    nu separate-a sollave mudiyadhu...
+                </p>
+
+                <p>
+                    Un kitta irukkura ellame enakku pudikkum.
+                    Un character, un care, un way of talking,
+                    sometimes nee panra silly things kooda. ❤️
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 6) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>Some memories... ❤️</h1>
+
+                <p>
+                    Nee en life-la vandhadhula irundhu,
+                    neraya small moments memories-a maariduchu.
+                </p>
+
+                <p>
+                    Sila moments romba simple-a irundhalum,
+                    later nenacha automatic-a smile varum. ❤️
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 7) {
+
+            document.getElementById("card").innerHTML = `
+                <h1>For the future... ❤️</h1>
+
+                <p>
+                    Future-la enna nadakkum nu namakku theriyadhu.
+                </p>
+
+                <p>
+                    Aana ippo namma irukkura indha moment-a
+                    genuine-a cherish panna naan virumburen.
+                </p>
+
+                <p>
+                    So, indha little surprise-oda final message...
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER to continue...
+                </div>
+            `;
+
+        }
+
+        else if (step === 8) {
+
+            document.getElementById("card").innerHTML = `
+                <div class="heart">❤️</div>
+
+                <h1>You are not just a user.</h1>
+
+                <p>
+                    You are a very important part<br>
+                    of my story. ❤️
+                </p>
+
+                <p>
+                    Happy Boyfriend's Day, Vasanth.
+                </p>
+
+                <p>
+                    — Poorvi 💕
+                </p>
+
+                <div class="enter">
+                    ⌨️ Press ENTER for one last surprise...
+                </div>
+            `;
+
+        }
+
+        else if (step === 9) {
+
+            document.getElementById("card").innerHTML = `
+                <div class="heart">🏆 ❤️</div>
+
+                <h1>CERTIFICATE OF<br>OFFICIAL BOYFRIEND</h1>
+
+                <p>
+                    This certificate is proudly presented to
+                </p>
+
+                <h2>VASANTHPRIYAN K</h2>
+
+                <p>
+                    For being an important part of<br>
+                    Poorvi's story and memories. ❤️
+                </p>
+
+                <p>
+                    Caring — 100%<br>
+                    Patience — 100%<br>
+                    Making Her Smile — 100%<br>
+                    Being Special — ∞%
+                </p>
+
+                <p>
+                    <b>Happy Boyfriend's Day! ❤️</b>
+                </p>
+
+                <p>
+                    — Poorvi 💕
+                </p>
+
+                <button class="download-btn" onclick="downloadCertificate()">
+                    ⬇️ Download Certificate
+                </button>
+            `;
+
+        }
+
+    }
+
+});
+
+
+function downloadCertificate() {
+
+    const certificate = `
+CERTIFICATE OF OFFICIAL BOYFRIEND
+
+This certificate is proudly presented to
+
+VASANTHPRIYAN K
+
+For being an important part of
+Poorvi's story and memories.
+
+Caring — 100%
+Patience — 100%
+Making Her Smile — 100%
+Being Special — ∞%
+
+Happy Boyfriend's Day! ❤️
+
+— Poorvi 💕
+    `;
+
+    const blob = new Blob([certificate], {
+        type: "text/plain"
+    });
+
+    const link = document.createElement("a");
+
+    link.href = URL.createObjectURL(blob);
+    link.download = "Vasanth_Boyfriend_Day_Certificate.txt";
+
+    link.click();
+
+    URL.revokeObjectURL(link.href);
+}
+
+</script>
+
+</body>
+</html>
